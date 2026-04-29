@@ -114,3 +114,39 @@ npm run dev
 Once the servers start successfully, the terminal will display a local URL (usually `http://localhost:5173`). Open this URL in your web browser to interact with the Indian Election Explorer!
 
 *Note: The backend API runs on port 8080 by default.*
+
+## ☁️ How to Deploy to Google Cloud Run
+
+Follow these instructions to deploy the application from scratch to Google Cloud Run:
+
+### Step 1: Clone the Repository
+Clone the project to your local machine:
+```bash
+git clone https://github.com/pooja-bhavani/Indian-Election-Explorer.git
+cd Indian-Election-Explorer
+```
+
+### Step 2: Install Google Cloud CLI
+Make sure you have the [Google Cloud CLI (`gcloud`)](https://cloud.google.com/sdk/docs/install) installed. On macOS with Homebrew, you can run:
+```bash
+brew install --cask google-cloud-sdk
+```
+
+### Step 3: Authenticate and Set the Project
+Login to your Google Cloud account and set your active project:
+```bash
+gcloud auth login
+gcloud config set project [YOUR_PROJECT_ID]
+```
+*(Replace `[YOUR_PROJECT_ID]` with your actual Google Cloud Project ID, for example: `election-project-494720`)*
+
+### Step 4: Deploy the Application
+Deploy the application directly from the source code. Cloud Run will automatically build the Docker container and deploy it:
+```bash
+gcloud run deploy elec --source . --region us-central1 --allow-unauthenticated
+```
+- `--source .`: Uses the `Dockerfile` in the root directory to build the app.
+- `--region`: Sets the deployment region (e.g., `us-central1`).
+- `--allow-unauthenticated`: Makes the application accessible to the public.
+
+Once the deployment finishes, the terminal will provide a live URL where your application is hosted!
