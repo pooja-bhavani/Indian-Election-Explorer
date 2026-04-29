@@ -2,6 +2,8 @@
 
 Welcome to the **Indian Election Explorer**! This project is an interactive, intelligent guide designed to help users understand the world's largest democratic exercise—the Indian Election process.
 
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/6601fb33-9747-4387-8677-26ab6e4c628d" />
+
 ## 🏆 The Challenge
 
 The challenge was to develop an interactive, user-friendly election guidance assistant and deploy it on Google Cloud Platform. The goal was to transform a legacy structure into a world-class, premium web application with a modern design using Tailwind CSS and Framer Motion. 
