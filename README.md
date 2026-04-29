@@ -8,6 +8,8 @@ Our application serves as a comprehensive educational platform that demystifies 
 
 <img width="1024" height="700" alt="image" src="https://github.com/user-attachments/assets/6601fb33-9747-4387-8677-26ab6e4c628d" />
 
+**[🔴 Live Demo: View the Indian Election Explorer on Google Cloud Run](https://elec-515858818285.us-central1.run.app)**
+
 ## 🏆 The Challenge
 
 The challenge was to develop an interactive, user-friendly election guidance assistant and deploy it on Google Cloud Platform. The goal was to transform a legacy structure into a world-class, premium web application with a modern design using Tailwind CSS and Framer Motion. 
