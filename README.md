@@ -149,4 +149,7 @@ gcloud run deploy elec --source . --region us-central1 --allow-unauthenticated
 - `--region`: Sets the deployment region (e.g., `us-central1`).
 - `--allow-unauthenticated`: Makes the application accessible to the public.
 
+<img width="1470" height="321" alt="Screenshot 2026-04-30 at 1 05 00 AM" src="https://github.com/user-attachments/assets/8a37d926-15bd-42e0-ae1c-93d19fcf4652" />
+
+
 Once the deployment finishes, the terminal will provide a live URL where your application is hosted!
