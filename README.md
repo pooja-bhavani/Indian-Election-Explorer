@@ -2,7 +2,7 @@
 
 Welcome to the **Indian Election Explorer**! This project is an interactive, intelligent guide designed to help users understand the world's largest democratic exercise—the Indian Election process.
 
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/6601fb33-9747-4387-8677-26ab6e4c628d" />
+<img width="1024" height="900" alt="image" src="https://github.com/user-attachments/assets/6601fb33-9747-4387-8677-26ab6e4c628d" />
 
 ## 🏆 The Challenge
 
