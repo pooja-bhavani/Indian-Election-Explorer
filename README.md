@@ -1,14 +1,10 @@
 # Indian Election Explorer
 
-![Indian Election Explorer Cover](./cover.png)
-
 Welcome to the **Indian Election Explorer**! This project is an interactive, intelligent guide designed to help users understand the world's largest democratic exercise—the Indian Election process. 
 
 Our application serves as a comprehensive educational platform that demystifies complex electoral procedures through visual learning, gamification, and AI-driven assistance. Whether you are a first-time voter, a student of political science, or just a curious citizen, this platform provides an intuitive and engaging way to explore how democracy functions in India.
 
 <img width="1024" height="700" alt="image" src="https://github.com/user-attachments/assets/6601fb33-9747-4387-8677-26ab6e4c628d" />
-
-**[🔴 Live Demo: View the Indian Election Explorer on Google Cloud Run](https://elec-515858818285.us-central1.run.app)**
 
 ## 🏆 The Challenge
 
