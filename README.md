@@ -1,6 +1,10 @@
 # Indian Election Explorer
 
-Welcome to the **Indian Election Explorer**! This project is an interactive, intelligent guide designed to help users understand the world's largest democratic exercise—the Indian Election process.
+![Indian Election Explorer Cover](./cover.png)
+
+Welcome to the **Indian Election Explorer**! This project is an interactive, intelligent guide designed to help users understand the world's largest democratic exercise—the Indian Election process. 
+
+Our application serves as a comprehensive educational platform that demystifies complex electoral procedures through visual learning, gamification, and AI-driven assistance. Whether you are a first-time voter, a student of political science, or just a curious citizen, this platform provides an intuitive and engaging way to explore how democracy functions in India.
 
 <img width="1024" height="700" alt="image" src="https://github.com/user-attachments/assets/6601fb33-9747-4387-8677-26ab6e4c628d" />
 
@@ -25,10 +29,63 @@ To meet the challenge, we built a comprehensive, responsive React application wi
 - **Election Simulation Engine**: Step into the shoes of a campaign manager and balance high-reach methods with high-conversion strategies to manage your budget and win elections.
 - **AI-Powered Context-Aware Assistant**: A floating chat interface that provides instant, contextual answers based on the section of the app you are currently exploring.
 
-### Technology Stack:
+## 📊 System Architecture & Diagrams
+
+### High-Level Architecture
+The application follows a modern client-server architecture with a React frontend communicating with an Express.js backend.
+
+```mermaid
+graph TD
+    Client[Client Browser] -->|HTTP/REST| Frontend
+    
+    subgraph "Frontend (React + Vite)"
+        Frontend[App Shell]
+        Frontend --> TL[Timeline Component]
+        Frontend --> FC[Flashcards Component]
+        Frontend --> QZ[Quiz Component]
+        Frontend --> SM[Simulation Component]
+        Frontend --> AI[Floating AI Chat]
+        
+        TL -.-> State[React Context / State]
+        FC -.-> State
+        QZ -.-> State
+        SM -.-> State
+        AI -.-> State
+    end
+    
+    AI -->|POST /api/chat| Backend
+    
+    subgraph "Backend (Node.js + Express)"
+        Backend[Express Server]
+        Backend --> Logic[Context-Aware Logic Engine]
+        Logic --> Data[Mock Election Data & Rules]
+    end
+```
+
+### User Journey Flow
+Here is how a typical user interacts with the platform:
+
+```mermaid
+journey
+    title User Journey: Learning the Election Process
+    section 1. Exploration
+      View Timeline: 5: User
+      Understand Election Stages: 4: User
+    section 2. Memorization
+      Use Smart Flashcards: 4: User
+      Learn Key Terms (EVM, NOTA): 5: User
+    section 3. Assessment & Simulation
+      Take the Quiz: 4: User
+      Run Campaign Simulation: 5: User
+    section 4. AI Assistance
+      Ask AI Contextual Questions: 5: User, AI Assistant
+```
+
+## 💻 Technology Stack
 - **Frontend**: React (Vite), Tailwind CSS, Framer Motion, Lucide React
 - **Backend**: Node.js, Express.js
 - **Tools**: Concurrently (to run both client and server seamlessly)
+- **Deployment**: Docker, Google Cloud Run
 
 ## 🛠️ How to Run the App Locally
 
